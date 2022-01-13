@@ -4,7 +4,7 @@ Megastrucutres
 ![Dyson Sphere](https://wallpaperaccess.com/full/4499666.jpg)
 * Matter Decompressor
 ```
-codes here
+public static void main()
 ```
 1. list1
 2. list2
