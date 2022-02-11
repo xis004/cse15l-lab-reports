@@ -1,1 +1,0 @@
-I like dyson spheres.
