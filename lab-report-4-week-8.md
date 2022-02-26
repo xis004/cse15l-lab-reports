@@ -25,7 +25,7 @@ Based on [CommonMark](https://spec.commonmark.org/dingus/), MarkdownParse should
 
 ##### Implementation of test
 The implementation of the test looks like the following:
-![image](pics/PTest1.png)
+![image](Pics/PTest1.png)
 First call getLinks on snippet1, which stores the content of snippet1, and store into an ArrayList called res (short for result).
 Next, create an ArrayList called exp (short for expect), and add all expected links to exp.
 Last, assert if exp and res are the same.
@@ -33,11 +33,11 @@ Last, assert if exp and res are the same.
 Note: The tests are the same on both implementations except added filepath and String conversion within the test on the reviewed version (rather than doing so in setup method).
 
 #### Personal Implementation
-![image](pics/errorPersonal1.png)
+![image](Pics/errorPersonal1.png)
 The test failed. It did not correctly identify that "url.[]()com" is an invalid link and also did not add "ucsd.[]()edu" to the list.
 
 #### Reviewed Implementation
-![image](pics/errorReview1.png)
+![image](Pics/errorReview1.png)
 The test failed. It did not correctly identify that "url.[]()com" is an invalid link.
 
 ### Snippet #2
@@ -56,15 +56,15 @@ Based on [CommonMark](https://spec.commonmark.org/dingus/), MarkdownParse should
 
 ##### Implementation of test
 The implementation of the test looks like the following:
-![image](pics/PTest2.png)
+![image](Pics/PTest2.png)
 Similar to testSnippet1, testSnippet2 creates ArrayLists res and exp to store the result of getLinks(snippet2) and the expected ArrayList.
 
 #### Personal Implementation
-![image](pics/errorPersonal2.png)
+![image](Pics/errorPersonal2.png)
 The test failed. It did not correctly identify "a.[]()com(())" but falsely found "a.[]()com((". It also did not find "example.[]()com" as a valid link.
 
 #### Reviewed Implementation
-![image](pics/errorReview2.png)
+![image](Pics/errorReview2.png)
 The test failed. It did not find "a.[]()com" and it did not correctly identify "a.[]()com(())" but falsely found "a.[]()com((".
 
 ### Snippet #3
@@ -101,15 +101,15 @@ Based on [CommonMark](https://spec.commonmark.org/dingus/), MarkdownParse should
 ["https:/[]()/ucsd-cse15l-w22.github.io/"]
 
 ##### Implementation of test
-![image](pics/Ptest3.png)
+![image](Pics/Ptest3.png)
 Similar to testSnippet1, testSnippet3 creates ArrayLists res and exp to store the result of getLinks(snippet3) and the expected ArrayList.
 
 #### Personal Implementation
-![image](pics/errorPersonal3.png)
+![image](Pics/errorPersonal3.png)
 The test failed. In addition to adding "https:/[]()/ucsd-cse15l-w22.github.io/" to the result, it also added other invalid links (along with texts) to the ArrayList.
 
 #### Reviewed Implementation
-![image](pics/errorReview3.png)
+![image](Pics/errorReview3.png)
 The test failed. Similar to the personal implementation, in addition to adding "https:/[]()/ucsd-cse15l-w22.github.io/" to the result, it also added other invalid links (along with texts) to the ArrayList.
 
 ### Questions
