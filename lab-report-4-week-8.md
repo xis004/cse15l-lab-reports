@@ -101,7 +101,7 @@ Based on [CommonMark](https://spec.commonmark.org/dingus/), MarkdownParse should
 ["https:/[]()/ucsd-cse15l-w22.github.io/"]
 
 ##### Implementation of test
-![image](Pics/Ptest3.png)
+![image](Pics/PTest3.png)
 Similar to testSnippet1, testSnippet3 creates ArrayLists res and exp to store the result of getLinks(snippet3) and the expected ArrayList.
 
 #### Personal Implementation
